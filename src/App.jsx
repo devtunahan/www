@@ -118,9 +118,7 @@ function App() {
           ))}
         
       </div>
-
       <br />
-
       <h2>{content[language].educationTitle}</h2>
       <div className="education-item">
         <p className="left">Bachelor of Science, Informatics</p>
