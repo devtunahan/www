@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Writing from "./pages/Writing";
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    <Footer />
     </>
   )
 }
