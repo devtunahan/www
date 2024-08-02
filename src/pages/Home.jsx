@@ -41,7 +41,7 @@ function Home() {
         <p className="text-base mb-4 sm:text-base">I'm always open to discussing new projects and opportunities. Feel free to reach out if you'd like to collaborate or if you have any questions.</p>
         <a 
           href="mailto:tunahan.karakaya@example.com" 
-          className="bg-white text-blue-500 py-2 px-4 rounded-lg font-semibold inline-block hover:bg-gray-100 transition"
+          className="bg-white text-blue-500 py-2 px-4 rounded-lg font-medium inline-block hover:bg-gray-100 transition"
         >
           Contact Me
         </a>
