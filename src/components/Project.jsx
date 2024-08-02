@@ -5,7 +5,7 @@ import Icon from './Icon'; // Adjust the import path as needed
 
 function Project({ id, imageSrc = "https://placehold.co/600x400", title = "Project Title", icons = [] }) {
   return (
-    <Link to={`/project/${id}`} className="flex w-full max-w-[18rem] flex-col rounded-xl bg-white text-gray-700 transform transition-transform duration-300 hover:scale-101">
+    <Link to={`/projects/${id}`} className="flex w-full max-w-[18rem] flex-col rounded-xl bg-white text-gray-700 transform transition-transform duration-300 hover:scale-101">
       <div className="relative mx-4 mt-6 overflow-hidden text-white rounded-xl transform transition-transform duration-300 hover:-translate-y-1">
         <img
           src={imageSrc}
