@@ -31,7 +31,7 @@ function Navbar() {
   return (
     <>
       <nav className='relative flex justify-center mt-6 text-base font-medium' ref={navRef}>
-        <div className='bg-gray-200 p-2 rounded-full text-gray-800 relative'>
+        <div className='bg-[#E3E3E4] p-2 rounded-full text-gray-800 relative'>
           <div 
             className="absolute bg-white drop-shadow-sm rounded-full transition-all duration-300 ease-in-out h-8 top-1/2 -translate-y-1/2"
             style={sliderStyle}

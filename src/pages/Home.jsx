@@ -2,11 +2,11 @@ import React from 'react';
 
 function Home() {
   return (
-    <div className="mt-6 mx-auto max-w-2xl p-4 overflow-x-auto">
+    <div className="mt-2 mx-auto max-w-2xl p-4 overflow-x-auto">
       <div className="text-center">
-        <h1 className="text-3xl font-bold text-gray-800 sm:text-3xl">Hi, I'm Tunahan Karakaya</h1>
-        <p className='text-lg text-gray-600 sm:text-lg'>
-          CS Student @ <button className=''>JKU Linz</button>, Java / Fullstack Developer based in Austria
+        <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl">Hi, I'm Tunahan Karakaya</h1>
+        <p className='text-base text-gray-600 sm:text-base'>
+          CS Student @ <a className='underline' href="https://www.jku.at/" target="_blank">JKU Linz</a>, Java / Fullstack Developer based in Austria
         </p>
         <div className="flex justify-center mt-6">
           <img className="w-full h-auto rounded-xl grayscale" src="https://placehold.co/600x400" alt="Placeholder" />
