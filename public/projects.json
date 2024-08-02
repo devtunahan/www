@@ -1,4 +1,3 @@
-
 [
 {
     "id": "1",
@@ -13,5 +12,12 @@
     "imageSrc": "https://placehold.co/600x400",
     "icons": ["/icons/XML.svg", "/icons/Tailwind-CSS.svg", "/icons/TeX.svg"],
     "content": "<h1 class='text-green-600'>Welcome to Project 2</h1><p>Here is some more content for Project 2.</p><img src='example.png' alt='Another Image' />"
+  },
+  {
+    "id": "3",
+    "title": "Project 3",
+    "imageSrc": "https://placehold.co/600x400",
+    "icons": ["/icons/XML.svg", "/icons/Tailwind-CSS.svg", "/icons/TeX.svg"],
+    "content": "<h1 class='text-red-600'>Welcome to Project 3</h1><p>Here is some more content for Project 3.</p><img src='example.png' alt='Another Image' />"
   }
 ]

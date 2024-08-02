@@ -15,7 +15,7 @@ function App() {
   const [projects, setProjects] = useState([]);
 
   const getData=()=>{
-    fetch('projects.json'
+    fetch('/projects.json'
     ,{
       headers : { 
         'Content-Type': 'application/json',
