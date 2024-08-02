@@ -1,14 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import Icon from './Icon'; // Adjust the import path as needed
 
-function Project({ 
-  imageSrc = "https://placehold.co/600x400", 
-  title = "Project Title", 
-  icons = [] 
-}) {
+function Project({ id, imageSrc = "https://placehold.co/600x400", title = "Project Title", icons = [] }) {
   return (
-    <div className="flex w-full max-w-[18rem] flex-col rounded-xl bg-white text-gray-700 transform transition-transform duration-300 hover:scale-101">
+    <Link to={`/project/${id}`} className="flex w-full max-w-[18rem] flex-col rounded-xl bg-white text-gray-700 transform transition-transform duration-300 hover:scale-101">
       <div className="relative mx-4 mt-6 overflow-hidden text-white rounded-xl transform transition-transform duration-300 hover:-translate-y-1">
         <img
           src={imageSrc}
@@ -34,11 +31,12 @@ function Project({
           ))}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
 Project.propTypes = {
+  id: PropTypes.string.isRequired, // Ensure id is passed as a prop
   imageSrc: PropTypes.string,
   title: PropTypes.string,
   icons: PropTypes.arrayOf(PropTypes.string) // Array of SVG file paths

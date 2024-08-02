@@ -7,6 +7,8 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Writing from "./pages/Writing";
 import Footer from './components/Footer';
+import ProjectDetail from './pages/ProjectDetail';
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="project/:id" element={<ProjectDetail />} />
           <Route path="writing" element={<Writing />} />
         </Route>
       </Routes>
