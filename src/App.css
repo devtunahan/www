@@ -5,7 +5,8 @@
 /* Footer.css */
 .footer {
     border-top: 1px solid rgb(237, 237, 237);
-    width: 656px;
+    width: 100%; /* Adjust width to be responsive */
+    max-width: 656px; /* Maximum width to match your design */
     margin: 0 auto;
     padding: 10px;
     text-align: center;
@@ -17,5 +18,25 @@
     color: #333; /* Adjust color as needed */
   }
   
-
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 15px; /* Slightly increase padding for smaller screens */
+    }
+  
+    .footer-text {
+      font-size: 12px; /* Adjust font size for medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 10px; /* Adjust padding for small screens */
+    }
+  
+    .footer-text {
+      font-size: 10px; /* Adjust font size for small screens */
+    }
+  }
+  
   
