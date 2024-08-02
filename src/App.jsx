@@ -35,12 +35,6 @@ function App() {
     getData();
   }, []);
 
-  useEffect(() => {
-    console.log("This is projects variable", projects);
-  }, [projects]);
-
-
-
   return (
     <>
       <BrowserRouter>
