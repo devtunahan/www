@@ -35,7 +35,7 @@ function Home({ projects, writings }) {
     <h2 className="text-2xl font-bold mb-2">Interested in Working Together?</h2>
     <p className="text-base mb-4">I'm always open to discussing new projects and opportunities. Feel free to reach out if you'd like to collaborate or if you have any questions.</p>
     <a 
-      href="mailto:tunahan.karakaya@example.com" 
+      href="mailto:me@tunahan.at" 
       className="bg-white text-[#171717] py-2 px-4 rounded-lg font-medium inline-block hover:bg-gray-100 transition"
     >
       Contact Me
