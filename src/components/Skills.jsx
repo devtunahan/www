@@ -9,27 +9,31 @@ const icons = [
 
 function Skills() {
   return (
-    <div className="relative bg-gray-300 p-4 rounded-lg flex-grow basis-[60%] min-w-[150px] h-40 overflow-hidden">
-      <div className="absolute inset-0 flex items-center">
-        <div className="flex animate-marquee whitespace-nowrap">
-          {icons.map((icon, index) => (
-            <img
-              key={`icon1-${index}`}
-              src={`/icons/${icon}.svg`}
-              alt={icon}
-              className="h-16 w-16 mx-4"
-            />
-          ))}
+    <div className="relative bg-gray-300 p-4 rounded-lg flex-grow basis-[60%] min-w-[150px] h-40 overflow-hidden flex items-center justify-center">
+      <div className="w-full flex flex-col gap-4">
+        <div className="flex overflow-hidden">
+          <div className="flex animate-marquee-right whitespace-nowrap">
+            {icons.concat(icons).map((icon, index) => (
+              <img
+                key={`icon1-${index}`}
+                src={`/icons/${icon}.svg`}
+                alt={icon}
+                className="h-12 w-12 mx-2"
+              />
+            ))}
+          </div>
         </div>
-        <div className="flex animate-marquee2 whitespace-nowrap">
-          {icons.map((icon, index) => (
-            <img
-              key={`icon2-${index}`}
-              src={`/icons/${icon}.svg`}
-              alt={icon}
-              className="h-16 w-16 mx-4"
-            />
-          ))}
+        <div className="flex overflow-hidden">
+          <div className="flex animate-marquee-left whitespace-nowrap">
+            {icons.concat(icons).map((icon, index) => (
+              <img
+                key={`icon2-${index}`}
+                src={`/icons/${icon}.svg`}
+                alt={icon}
+                className="h-12 w-12 mx-2"
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
