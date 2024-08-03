@@ -6,7 +6,6 @@ function ProjectDetail({projects}) {
   const { id } = useParams();
   const [project, setProject] = useState(null);
   useEffect(() => {
-    
     const selectedProject = projects.find((p) => p.id === id);
     setProject(selectedProject);
   }, [id]);

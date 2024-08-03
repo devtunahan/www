@@ -58,11 +58,11 @@ function Navbar() {
             <span className="relative z-10">Projects</span>
           </Link>
           <Link 
-            to="/writing" 
-            onClick={() => handleLinkClick('/writing')}
-            className={`relative px-3 py-2 rounded-full transition-all duration-300 ease-in-out ${location.pathname === '/writing' ? 'text-gray-800' : ''}`}
+            to="/writings" 
+            onClick={() => handleLinkClick('/writings')}
+            className={`relative px-3 py-2 rounded-full transition-all duration-300 ease-in-out ${location.pathname === '/writings' ? 'text-gray-800' : ''}`}
           >
-            <span className="relative z-10">Writing</span>
+            <span className="relative z-10">Writings</span>
           </Link>
         </div>
       </nav>

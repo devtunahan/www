@@ -1,12 +1,14 @@
 import React from 'react';
 
 function About() {
+
+
   return (
     <div className="mt-8 mx-auto p-6 max-w-2xl overflow-x-hidden">
       <section className="text-left mb-12">
         <p className="text-2xl font-semibold text-gray-600">About me</p>
         <h1 className="text-4xl font-bold text-gray-800 mt-2">Hi, I'm Tunahan Karakaya</h1>
-        <p className='text-gray-400'>Updated at 08/02/2024</p>
+        <p className='text-gray-400'>Updated at 8/2/2024</p>
         <p className="mt-6 text-gray-700 leading-relaxed">
           Currently enrolled as a Computer Science student at JKU in Linz, I have a passion for designing and building web apps. I find joy in bringing ideas to life on the screen and love exploring the latest tech trends. Automating workflows to enhance efficiency is another area I enjoy diving into.
           I'm also fascinated by psychology, especially when it comes to general knowledge and self-improvement. This interest fuels my curiosity and helps me grow both personally and professionally.
