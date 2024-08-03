@@ -8,7 +8,7 @@ import Skills from './Skills';
 import VSStats from './VSStats';
 import OneToOne from './OneToOne';
 
-const FlexboxContainer = () => {
+const FlexboxContainer = ({writings}) => {
   return (
     <div className="flex flex-wrap gap-4 mt-6">
       {/* First row */}
@@ -19,7 +19,7 @@ const FlexboxContainer = () => {
       {/* Twitter */}
       <Twitter />  
       {/* Second row */}
-      <LatestWriting />
+      <LatestWriting writings={writings} />
       {/* Latest Blogpost */}
       {/* Skills */}
       <Skills />      

@@ -3,7 +3,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome C
 import FeaturedProject from '../components/FeaturedProject';
 import FlexboxContainer from '../components/FlexboxContainer'; // Import the new component
 
-function Home({ projects }) {
+function Home({ projects, writings }) {
   return (
     <div className="mt-2 mx-auto max-w-2xl p-4 overflow-x-auto">
       <div className="text-center">
@@ -24,7 +24,7 @@ function Home({ projects }) {
         <FeaturedProject id="1" projects={projects} />
 
         {/* Use the FlexboxContainer component */}
-        <FlexboxContainer />
+        <FlexboxContainer writings={writings} />
 
       </div>
 

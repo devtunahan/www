@@ -61,7 +61,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navbar />}>
-          <Route index element={<Home projects={projects} />} />
+          <Route index element={<Home projects={projects} writings={writings} />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects projects={projects} />} />
           <Route path="projects/:id" element={<ProjectDetail projects={projects} />} />
