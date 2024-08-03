@@ -8,7 +8,7 @@ function LatestWriting({ writings }) {
   if (!latestWriting.title) return null;
 
   return (
-    <div className="bg-stone-800 text-white p-4 rounded-lg flex flex-col justify-between basis-full md:basis-[20%] h-40 relative transition-transform transform hover:scale-105">
+    <div className="bg-[#222222] text-white p-4 rounded-lg flex flex-col justify-between basis-full md:basis-[20%] h-40 relative transition-transform transform hover:scale-105">
       <div className="absolute inset-0 flex items-center justify-center z-0">
         <FaBook className="text-white opacity-20 text-5xl md:text-7xl" />
       </div>
