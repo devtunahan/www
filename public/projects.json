@@ -1,8 +1,8 @@
 [
-{
+  {
     "id": "1",
     "title": "Project 1",
-    "imageSrc": "https://placehold.co/600x400",
+    "imageSrc": "https://images.unsplash.com/photo-1504164996022-09080787b6b3?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "icons": ["/icons/XML.svg", "/icons/Tailwind-CSS.svg", "/icons/TeX.svg"],
     "content": "<h1 class='underline text-blue-600'>Hello World</h1><p>This is an example content.</p><img src='test.png' alt='Example Image' />"
   },

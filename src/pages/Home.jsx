@@ -1,7 +1,9 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
+import FeaturedProject from '../components/FeaturedProject';
+import FlexboxContainer from '../components/FlexboxContainer'; // Import the new component
 
-function Home() {
+function Home({ projects }) {
   return (
     <div className="mt-2 mx-auto max-w-2xl p-4 overflow-x-auto">
       <div className="text-center">
@@ -12,27 +14,18 @@ function Home() {
         
         {/* Badge with padding and icon */}
         <div className="mt-6 mb-2 flex justify-center">
-          <div className="inline-flex items-center bg-gray-900 text-white py-2 px-4 text-xs font-bold uppercase rounded-lg">
+          <div className="inline-flex items-center bg-gray-700 text-white py-2 px-4 text-xs font-bold uppercase rounded-full">
             <i className="fas fa-crown mr-2"></i> {/* Font Awesome crown icon */}
             Featured Project
           </div>
         </div>
 
-        {/* Image container */}
-        <div className="flex justify-center">
-          <img className="w-full h-auto rounded-xl grayscale" src="https://placehold.co/600x400" alt="Placeholder" />
-        </div>
+        {/* Featured Project container */}
+        <FeaturedProject id="1" projects={projects} />
 
-        {/* Flex container with seven larger elements */}
-        <div className="flex gap-4 mt-6 justify-center flex-wrap">
-          <div className="bg-blue-500 text-white p-6 rounded-lg flex-1 min-w-[150px] h-40 grayscale transition-transform transform hover:scale-105">Element 1</div>
-          <div className="bg-green-500 text-white p-6 rounded-lg flex-2 min-w-[150px] h-40 grayscale transition-transform transform hover:scale-105">Element 2</div>
-          <div className="bg-red-500 text-white p-6 rounded-lg flex-1 min-w-[150px] h-40 grayscale transition-transform transform hover:scale-105">Element 3</div>
-          <div className="bg-yellow-500 text-white p-6 rounded-lg flex-3 min-w-[150px] h-40 grayscale transition-transform transform hover:scale-105">Element 4</div>
-          <div className="bg-purple-500 text-white p-6 rounded-lg flex-1 min-w-[150px] h-40 grayscale transition-transform transform hover:scale-105">Element 5</div>
-          <div className="bg-teal-500 text-white p-6 rounded-lg flex-2 min-w-[150px] h-40 grayscale transition-transform transform hover:scale-105">Element 6</div>
-          <div className="bg-pink-500 text-white p-6 rounded-lg flex-1 min-w-[150px] h-40 grayscale transition-transform transform hover:scale-105">Element 7</div>
-        </div>
+        {/* Use the FlexboxContainer component */}
+        <FlexboxContainer />
+
       </div>
 
       {/* New full-width section */}
