@@ -9,7 +9,7 @@ function Github() {
 
   return (
     <div
-      className="bg-gray-400 text-white p-6 rounded-lg flex-grow basis-[40%] min-w-[150px] h-40 transition-transform transform hover:scale-105 cursor-pointer flex items-center justify-center"
+      className="bg-gray-700 text-white p-6 rounded-lg flex-grow basis-[40%] min-w-[150px] h-40 transition-transform transform hover:scale-105 cursor-pointer flex items-center justify-center"
       onClick={handleClick}
     >
       <FontAwesomeIcon

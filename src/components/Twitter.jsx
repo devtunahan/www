@@ -9,7 +9,7 @@ function Twitter() {
 
   return (
     <div
-      className="bg-blue-500 text-white p-6 rounded-lg flex-grow basis-[20%] min-w-[150px] h-40 transition-transform transform hover:scale-105 cursor-pointer flex items-center justify-center"
+      className="bg-zinc-900 text-white p-6 rounded-lg flex-grow basis-[20%] min-w-[150px] h-40 transition-transform transform hover:scale-105 cursor-pointer flex items-center justify-center"
       onClick={handleClick}
     >
       <FontAwesomeIcon

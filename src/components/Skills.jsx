@@ -9,7 +9,7 @@ const icons = [
 
 function Skills() {
   return (
-    <div className="relative bg-gray-300 p-4 rounded-lg flex-grow basis-[60%] min-w-[150px] h-40 overflow-hidden flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer">
+    <div className="relative bg-transparent p-4 rounded-lg flex-grow basis-[60%] min-w-[150px] h-40 overflow-hidden flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer">
       <div className="w-full flex flex-col gap-4">
         <div className="flex overflow-hidden">
           <div className="flex animate-marquee-right whitespace-nowrap">
