@@ -41,7 +41,7 @@ function OneToOne(props) {
           data-cal-namespace="15min"
           data-cal-link="tunahan/15min"
           data-cal-config='{"layout":"month_view"}'
-          className="relative z-10 text-xl font-bold"
+          className="relative z-10 text-xl font-bold h-40 min-w-[150px] w-[650px]"
         >
           1:1 Call
         </button>
