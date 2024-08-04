@@ -20,10 +20,6 @@ function Home({ projects, writings }) {
   </div>
 </div>
 
-
-
-
-
         {/* Featured Project container */}
         <FeaturedProject id="1" projects={projects} />
 
@@ -32,20 +28,7 @@ function Home({ projects, writings }) {
 
       </div>
 
-    {/* New full-width section */}
-<div className="relative bg-[#171717] text-white mt-4 p-6 rounded-lg overflow-hidden">
-  <i className="fas fa-envelope text-9xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#424242] opacity-30"></i>
-  <div className="relative z-10">
-    <h2 className="text-2xl font-bold mb-2">Interested in Working Together?</h2>
-    <p className="text-base mb-4">I'm always open to discussing new projects and opportunities. Feel free to reach out if you'd like to collaborate or if you have any questions.</p>
-    <a 
-      href="mailto:me@tunahan.at" 
-      className="bg-white text-[#171717] py-2 px-4 rounded-lg font-medium inline-block hover:bg-gray-100 transition"
-    >
-      Contact Me
-    </a>
-  </div>
-</div>
+
 
     </div>
   );

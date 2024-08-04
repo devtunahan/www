@@ -9,7 +9,7 @@ function Instagram() {
 
   return (
     <div
-      className="bg-[#1f1f1f] text-white p-6 rounded-lg flex-grow basis-[20%] min-w-[150px] h-40 transition-transform transform hover:scale-105 cursor-pointer flex items-center justify-center"
+      className="bg-[#f988aa] text-white p-6 rounded-lg flex-grow basis-[20%] min-w-[150px] h-40 transition-transform transform hover:scale-105 cursor-pointer flex items-center justify-center border border-pink-400 shadow-lg"
       onClick={handleClick}
     >
       <FontAwesomeIcon
