@@ -1,12 +1,3 @@
 [
-   {
-    "id":"1",
-    "topic": "Dummy",
-    "title":"Dummy",
-    "paragraph":"iOS privdes several types of onscreen keyboards, each designed to facilitate a different situation - Apple has 10 + 2 keyboards for iOS each designed to facilitate",
-    "createdDate":"1 March 2022",
-    "author":"Tunahan Karakaya",
-    "readingTime":"4min",
-    "content":"<h1 class='text-2xl font-bold'>Heading 1</h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"
-   }
+   
 ]
