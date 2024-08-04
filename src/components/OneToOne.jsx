@@ -15,6 +15,13 @@ function OneToOne() {
     })();
   }, []);
 
+  const handleMouseDown = (event) => {
+    // Check if the middle mouse button (button 1) was clicked
+    if (event.button === 1) {
+      window.open('https://cal.com/tunahan/15min', '_blank', 'noopener,noreferrer');
+    }
+  };
+
   return (
     <div className="relative bg-[#212121] text-white p-6 rounded-lg flex-grow basis-[80%] min-w-[150px] h-40 transition-transform transform hover:scale-105 flex items-center justify-center">
       <div className="absolute inset-0 flex items-center justify-center">
@@ -35,6 +42,7 @@ function OneToOne() {
               layout: 'month_view',
             });
           }}
+          onMouseDown={handleMouseDown}  // Use onMouseDown to detect middle mouse button clicks
           className="relative z-10 text-xl font-bold"
         >
           1:1 Call

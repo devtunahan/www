@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 function LatestWriting({ writings }) {
   const latestWriting = writings.at(-1);
 
+  const handleMouseDown = (event, url) => {
+    // Check if the middle mouse button (button 1) was clicked
+    if (event.button === 1) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   return (
     <div className="bg-[#cacaca] text-white p-4 rounded-lg flex flex-col justify-center items-start basis-full md:basis-[30%] h-40 relative transition-transform transform hover:scale-105 border border-gray-400 shadow-lg">
       {latestWriting ? (
@@ -15,6 +22,7 @@ function LatestWriting({ writings }) {
           <Link 
             to={`/writings/${latestWriting.id}`} 
             className="relative z-10 flex flex-col justify-center items-start h-full w-full"
+            onMouseDown={(event) => handleMouseDown(event, `/writings/${latestWriting.id}`)}
           >
             <h1 className="text-lg md:text-xl font-bold mb-2 md:mb-3">LATEST WRITING</h1>
           </Link>
