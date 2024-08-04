@@ -23,7 +23,7 @@ function ProjectDetail({ projects }) {
           className="w-full h-full object-cover" 
         />
       </div>
-      <h1 className="text-3xl font-bold">{project.title}</h1>
+      <h1 className="text-3xl mt-5 font-bold">{project.title}</h1>
       <div className="flex gap-2 mt-4">
         {project.icons.map((icon, index) => (
           <img key={index} src={icon} alt={`icon-${index}`} className="w-6 h-6" />

@@ -1,23 +1,52 @@
 [
   {
     "id": "1",
-    "title": "Project 1",
-    "imageSrc": "https://images.unsplash.com/photo-1504164996022-09080787b6b3?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "icons": ["/icons/XML.svg", "/icons/Tailwind-CSS.svg", "/icons/TeX.svg"],
-    "content": "<h1 class='underline text-blue-600'>Hello World</h1><p>This is an example content.</p><img src='test.png' alt='Example Image' />"
+    "title": "New Personal Portfolio Page",
+    "imageSrc": "/projects/new-portfolio.png",
+    "icons": ["/icons/Vite.svg", "/icons/Tailwind-CSS.svg", "/icons/Vercel.svg","/icons/JSON.svg","/icons/Visual-Studio-Code-(VS-Code).svg"],
+    "content": "content coming soon"
   },
   {
     "id": "2",
-    "title": "Project 2",
-    "imageSrc": "https://placehold.co/600x400",
-    "icons": ["/icons/XML.svg", "/icons/Tailwind-CSS.svg", "/icons/TeX.svg"],
-    "content": "<h1 class='text-green-600'>Welcome to Project 2</h1><p>Here is some more content for Project 2.</p><img src='example.png' alt='Another Image' />"
+    "title": "Login Boilerplate",
+    "imageSrc": "/projects/login.png",
+    "icons": ["/icons/Vite.svg", "/icons/Tailwind-CSS.svg", "/icons/Node.js.svg","/icons/MongoDB.svg","/icons/Visual-Studio-Code-(VS-Code).svg"],
+    "content": "content coming soon"
   },
   {
     "id": "3",
-    "title": "Project 3",
-    "imageSrc": "https://placehold.co/600x400",
-    "icons": ["/icons/XML.svg", "/icons/Tailwind-CSS.svg", "/icons/TeX.svg"],
-    "content": "<h1 class='text-red-600'>Welcome to Project 3</h1><p>Here is some more content for Project 3.</p><img src='example.png' alt='Another Image' />"
+    "title": "Old Portfolio Page",
+    "imageSrc": "/projects/portfolio.png",
+    "icons": ["/icons/Vite.svg", "/icons/Tailwind-CSS.svg", "/icons/Node.js.svg","/icons/MongoDB.svg","/icons/Visual-Studio-Code-(VS-Code).svg"],
+    "content": "content coming soon"
+  },
+  {
+    "id": "3",
+    "title": "Techaid",
+    "imageSrc": "/projects/techaid.png",
+    "icons": ["/icons/Vite.svg", "/icons/Tailwind-CSS.svg","/icons/Visual-Studio-Code-(VS-Code).svg"],
+    "content": "content coming soon"
+  },
+  {
+    "id": "4",
+    "title": "Timeloom",
+    "imageSrc": "/projects/timeloom.png",
+    "icons": ["/icons/Vite.svg", "/icons/Tailwind-CSS.svg", "/icons/Node.js.svg","/icons/MongoDB.svg","/icons/Visual-Studio-Code-(VS-Code).svg"],
+    "content": "content coming soon"
+  },
+  {
+    "id": "5",
+    "title": "Todoflow",
+    "imageSrc": "/projects/todoflow.png",
+    "icons": ["/icons/Vite.svg", "/icons/Tailwind-CSS.svg", "/icons/Node.js.svg","/icons/MongoDB.svg","/icons/Visual-Studio-Code-(VS-Code).svg"],
+    "content": "content coming soon"
+  },
+  {
+    "id": "5",
+    "title": "TU-Solutions Landing Page",
+    "imageSrc": "/projects/tu-solutions.png",
+    "icons": ["/icons/Vite.svg", "/icons/Tailwind-CSS.svg", "/icons/Visual-Studio-Code-(VS-Code).svg"],
+    "content": "content coming soon"
   }
+
 ]
