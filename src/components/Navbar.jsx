@@ -28,6 +28,7 @@ function Navbar() {
   const handleLinkClick = (path) => {
     updateSliderPosition(path);
     if (audioRef.current) {
+      audioRef.current.volume = 0.2; // Set volume to 20%
       audioRef.current.play(); // Play the sound effect
     }
   };
