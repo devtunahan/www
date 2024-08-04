@@ -16,7 +16,7 @@ function OneToOne() {
   }, []);
 
   return (
-    <div className="relative bg-[#151515] text-white p-6 rounded-lg flex-grow basis-[40%] min-w-[150px] h-40 transition-transform transform hover:scale-105 flex items-center justify-center">
+    <div className="relative bg-[#151515] text-white p-6 rounded-lg flex-grow basis-[80%] min-w-[150px] h-40 transition-transform transform hover:scale-105 flex items-center justify-center">
       <div className="absolute inset-0 flex items-center justify-center">
         {/* Background Calendar Icon */}
         <FontAwesomeIcon

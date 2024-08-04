@@ -12,13 +12,17 @@ function Home({ projects, writings }) {
           CS Student @ <a className='underline' href="https://www.jku.at/" target="_blank" rel="noopener noreferrer">JKU Linz</a>, Java / Fullstack Developer based in Austria
         </p>
         
-        {/* Badge with padding and icon */}
-        <div className="mt-6 mb-2 flex justify-center">
-          <div className="inline-flex items-center bg-[#1c1c1c] text-white py-2 px-4 text-xs font-bold uppercase rounded-full">
-            <i className="fas fa-crown mr-2"></i> {/* Font Awesome crown icon */}
-            Featured Project
-          </div>
-        </div>
+{/* Badge with padding and icon */}
+<div className="mt-6 mb-4 flex justify-center">
+  <div className="inline-flex items-center bg-yellow-500 text-yellow-900 py-2 px-4 text-xs font-bold uppercase rounded-full glow-effect">
+    <i className="fas fa-crown mr-2"></i> {/* Font Awesome crown icon */}
+    Featured Project
+  </div>
+</div>
+
+
+
+
 
         {/* Featured Project container */}
         <FeaturedProject id="1" projects={projects} />

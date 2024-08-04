@@ -26,7 +26,7 @@ const FlexboxContainer = ({writings}) => {
 
       {/* Third row */}
       {/* VS Code stats */}
-      <VSStats />
+      {/*<VSStats />*/} 
       {/* 1:1 call -> cal.com */}
       <OneToOne />
     </div>

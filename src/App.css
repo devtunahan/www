@@ -46,3 +46,23 @@ body {
       font-size: 10px; /* Adjust font size for small screens */
     }
   }
+
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 223, 0, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 223, 0, 0.7);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(255, 223, 0, 0.7);
+    }
+  }
+
+  .glow-effect {
+    background-color: #f9d71c; /* Light yellow background color */
+    color: #333; /* Darker text color for contrast */
+    animation: pulse 1.5s infinite; /* Apply the pulse animation */
+    box-shadow: 0 0 10px rgba(255, 223, 0, 0.7); /* Initial glow */
+  }
