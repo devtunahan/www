@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import ProjectDetail from './pages/ProjectDetail';
 import WritingDetail from './pages/WritingDetail';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 function App() {
@@ -73,6 +74,7 @@ function App() {
       </Routes>
     </BrowserRouter>
     <Analytics />
+    <SpeedInsights />
     <Footer />
     </>
   )
