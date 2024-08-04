@@ -1,5 +1,5 @@
-// components/FlexboxContainer.js
 import React from 'react';
+import withSoundEffects from '../withSoundEffects';
 import Github from './Github';
 import Instagram from './Instagram';
 import Twitter from './Twitter';
@@ -8,27 +8,27 @@ import Skills from './Skills';
 import VSStats from './VSStats';
 import OneToOne from './OneToOne';
 
-const FlexboxContainer = ({writings}) => {
+// Wrap components with the HOC
+const GithubWithSound = withSoundEffects(Github);
+const InstagramWithSound = withSoundEffects(Instagram);
+const TwitterWithSound = withSoundEffects(Twitter);
+const LatestWritingWithSound = withSoundEffects(LatestWriting);
+const SkillsWithSound = withSoundEffects(Skills);
+const VSStatsWithSound = withSoundEffects(VSStats);
+const OneToOneWithSound = withSoundEffects(OneToOne);
+
+const FlexboxContainer = ({ writings }) => {
   return (
     <div className="flex flex-wrap gap-4 mt-6">
       {/* First row */}
-      {/* Github */}
-      <Github />
-      {/* Instagram */}
-      <Instagram />
-      {/* Twitter */}
-      <Twitter />  
+      <GithubWithSound />
+      <InstagramWithSound />
+      <TwitterWithSound />
       {/* Second row */}
-      <LatestWriting writings={writings} />
-      {/* Latest Blogpost */}
-      {/* Skills */}
-      <Skills />      
-
+      <LatestWritingWithSound writings={writings} />
+      <SkillsWithSound />
       {/* Third row */}
-      {/* VS Code stats */}
-      {/*<VSStats />*/} 
-      {/* 1:1 call -> cal.com */}
-      <OneToOne />
+      <OneToOneWithSound />
     </div>
   );
 };

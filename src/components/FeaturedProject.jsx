@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Icon from './Icon';
+import withSoundEffects from '../withSoundEffects'; // Import the HOC
 
-function FeaturedProject({ id, projects }) {
+function FeaturedProject({ id, projects, onMouseEnter, onClick }) {
     const [project, setProject] = useState(null);
 
     useEffect(() => {
@@ -15,7 +16,12 @@ function FeaturedProject({ id, projects }) {
     }
 
     return (
-        <Link to={`/projects/${project.id}`} className="relative block">
+        <Link
+            to={`/projects/${project.id}`}
+            className="relative block"
+            onMouseEnter={onMouseEnter}
+            onClick={onClick}
+        >
             <div className="relative w-full h-[380px] overflow-hidden transition-transform transform hover:scale-105 rounded-xl">
                 <img 
                     className="w-full h-full object-cover"
@@ -40,4 +46,4 @@ function FeaturedProject({ id, projects }) {
     );
 }
 
-export default FeaturedProject;
+export default withSoundEffects(FeaturedProject); // Wrap with HOC

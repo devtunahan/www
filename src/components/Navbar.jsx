@@ -5,6 +5,7 @@ function Navbar() {
   const location = useLocation();
   const [sliderStyle, setSliderStyle] = useState({});
   const navRef = useRef(null);
+  const audioRef = useRef(null); // Reference to the audio element
 
   const updateSliderPosition = (path) => {
     const linkElement = navRef.current.querySelector(`[href="${path}"]`);
@@ -26,6 +27,10 @@ function Navbar() {
 
   const handleLinkClick = (path) => {
     updateSliderPosition(path);
+    if (audioRef.current) {
+      audioRef.current.volume = 0.2; // Set volume to 20%
+      audioRef.current.play(); // Play the sound effect
+    }
   };
 
   return (
@@ -66,6 +71,7 @@ function Navbar() {
           </Link>
         </div>
       </nav>
+      <audio ref={audioRef} src="/sounds/slide.mp3" preload="auto" />
       <Outlet />
     </>
   );
