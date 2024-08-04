@@ -1,4 +1,5 @@
 import React from 'react';
+import withSoundEffects from '../withSoundEffects'; // Ensure this path is correct
 
 const icons = [
   'Confluence', 'Git', 'GitHub', 'Bash', 'Java', 'Jira',
@@ -7,9 +8,12 @@ const icons = [
   'JSON', 'JavaScript', 'Jenkins', 'Linux', 'MySQL', 'Postman', 'Raspberry-Pi', 'SSH'
 ];
 
-function Skills() {
+function Skills(props) {
   return (
-    <div className="relative bg-transparent p-4 rounded-lg flex-grow basis-[60%] min-w-[150px] h-40 overflow-hidden flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer">
+    <div
+      className="relative bg-transparent p-4 rounded-lg flex-grow basis-[60%] min-w-[150px] h-40 overflow-hidden flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer"
+      {...props} // Spread the props to include onMouseEnter and onClick handlers
+    >
       <div className="w-full flex flex-col gap-4">
         <div className="flex overflow-hidden">
           <div className="flex animate-marquee-right whitespace-nowrap">
@@ -40,4 +44,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default withSoundEffects(Skills);
