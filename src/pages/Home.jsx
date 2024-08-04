@@ -21,7 +21,7 @@ function Home({ projects, writings }) {
 </div>
 
         {/* Featured Project container */}
-        <FeaturedProject id="4" projects={projects} />
+        <FeaturedProject id="1" projects={projects} />
 
         {/* Use the FlexboxContainer component */}
         <FlexboxContainer writings={writings} />
