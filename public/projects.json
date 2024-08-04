@@ -42,7 +42,7 @@
     "content": "content coming soon"
   },
   {
-    "id": "5",
+    "id": "6",
     "title": "TU-Solutions Landing Page",
     "imageSrc": "/projects/tu-solutions.png",
     "icons": ["/icons/Vite.svg", "/icons/Tailwind-CSS.svg", "/icons/Visual-Studio-Code-(VS-Code).svg"],
