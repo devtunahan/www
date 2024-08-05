@@ -1,8 +1,8 @@
 // withSoundEffects.js
 import React from 'react';
 import useSound from './useSound'; // Import your custom hook
-import hoverSound from '../public/sounds/hover.mp3'; // Path to your hover sound file
-import clickSound from '../public/sounds/click.mp3'; // Path to your click sound file
+import hoverSound from '/sounds/hover.mp3'; // Path to your hover sound file
+import clickSound from '/sounds/click.mp3'; // Path to your click sound file
 
 const withSoundEffects = (WrappedComponent) => {
   return (props) => {
