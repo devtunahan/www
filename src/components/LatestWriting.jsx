@@ -16,7 +16,7 @@ function LatestWriting({ writings, ...props }) { // Spread the rest of props
 
   return (
     <div
-      className="bg-[#cacaca] text-white p-4 rounded-lg flex flex-col justify-center items-start basis-full md:basis-[30%] h-40 relative transition-transform transform hover:scale-105 border border-gray-400 shadow-lg"
+      className="bg-[#474444] text-white p-4 rounded-lg flex flex-col justify-center items-start basis-full md:basis-[30%] h-40 relative transition-transform transform hover:scale-105 border border-gray-400 shadow-lg"
       {...props} // Spread props to include handlers from the HOC
     >
       {latestWriting ? (
