@@ -28,7 +28,7 @@ function Home({ projects, writings }) {
         </div>
 
         {/* Featured Project container */}
-        <FeaturedProjectWithSound id="1" projects={projects} />
+        <FeaturedProjectWithSound id="q6j1iaxzoos6pss" projects={projects} />
 
         {/* Use the FlexboxContainer component */}
         <FlexboxContainerWithSound writings={writings} />

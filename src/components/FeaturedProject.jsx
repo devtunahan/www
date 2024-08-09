@@ -4,12 +4,20 @@ import Icon from './Icon';
 import withSoundEffects from '../withSoundEffects'; // Import the HOC
 
 function FeaturedProject({ id, projects, onMouseEnter, onClick }) {
+
     const [project, setProject] = useState(null);
+    const [imageUrl, setImageUrl] = useState(null);
 
     useEffect(() => {
         const selectedProject = projects.find((p) => p.id === id);
-        setProject(selectedProject || null); // Set to null if not found
-    }, [id, projects]); // Add dependencies
+        setProject(selectedProject || null);
+    }, [id, projects]);
+
+    useEffect(() => {
+        if (project) {
+            setImageUrl(`https://www-db.tunahan.at/api/files/${project.collectionId}/${id}/${project.image}`);
+        }
+    }, [project, id]);
 
     if (!project) {
         return <div>Loading...</div>;
@@ -25,7 +33,7 @@ function FeaturedProject({ id, projects, onMouseEnter, onClick }) {
             <div className="relative w-full h-[380px] overflow-hidden transition-transform transform hover:scale-105 rounded-xl">
                 <img 
                     className="w-full h-full object-cover"
-                    src={project.imageSrc} 
+                    src={imageUrl} 
                     alt="Project Image" 
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-4 flex justify-between items-center backdrop-blur-sm bg-white/25 rounded-tl-xl rounded-tr-xl">

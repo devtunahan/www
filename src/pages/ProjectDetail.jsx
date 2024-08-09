@@ -5,11 +5,19 @@ import DOMPurify from 'dompurify'; // Import DOMPurify for HTML sanitization
 function ProjectDetail({ projects }) {
   const { id } = useParams();
   const [project, setProject] = useState(null);
+  const [imageUrl, setImageUrl] = useState(null);
 
   useEffect(() => {
     const selectedProject = projects.find((p) => p.id === id);
     setProject(selectedProject);
   }, [id, projects]);
+
+  useEffect(() => {
+    if (project) {
+        setImageUrl(`https://www-db.tunahan.at/api/files/${project.collectionId}/${id}/${project.image}`);
+    }
+}, [project, id]);
+
 
   if (!project) return <p>Loading...</p>;
 
@@ -18,7 +26,7 @@ function ProjectDetail({ projects }) {
       
       <div className="relative h-[380px] overflow-hidden rounded-xl mt-4">
         <img 
-          src={project.imageSrc} 
+          src={imageUrl} 
           alt={project.title} 
           className="w-full h-full object-cover" 
         />

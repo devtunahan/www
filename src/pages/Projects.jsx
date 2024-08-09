@@ -11,7 +11,8 @@ function Projects({ projects }) {
           <Project
             key={project.id}
             id={project.id}
-            imageSrc={project.imageSrc}
+            collectionId={project.collectionId}
+            image={project.image}
             title={project.title}
             icons={project.icons}
             className="m-4"
