@@ -38,6 +38,7 @@ function App() {
       sort: '-created',
     });
     setProjects(records);
+    pb.authStore.clear();
   }
 
   useEffect(() => {
