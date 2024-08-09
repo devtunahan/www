@@ -2,21 +2,14 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Icon from './Icon'; // Adjust the import path as needed
-import PocketBase from 'pocketbase'
 
-
-function Project({ id, collectionId,image = "https://placehold.co/600x400", title = "Project Title", icons = []}) {
+function Project({ id, collectionId, image = "https://placehold.co/600x400", title = "Project Title", icons = [] }) {
   // Construct the URL dynamically
-  const [imageUrl, setImageUrl] = useState();
+  const [imageUrl, setImageUrl] = useState(image);
 
-  useEffect = async () => {
-    const authData = await pb.admins.authWithPassword(
-      import.meta.env.VITE_PB_EMAIL,
-      import.meta.env.VITE_PB_PASSWORD
-    );
-    setImageUrl(`https://www-db.tunahan.at/api/files/${collectionId}/${id}/${image}`)
-    pb.authStore.clear();
-  }
+  useEffect(() => {
+    setImageUrl(`https://www-db.tunahan.at/api/files/${collectionId}/${id}/${image}`);
+  }, [collectionId, id, image]); // Dependencies to watch for changes
 
   return (
     <Link to={`/projects/${id}`} className="flex w-full max-w-[18rem] flex-col rounded-xl bg-white text-gray-700 transform transition-transform duration-300 hover:scale-101">

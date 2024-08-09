@@ -18,32 +18,26 @@ function App() {
   const [projects, setProjects] = useState([]);
   const [writings, setWritings] = useState([]);
 
-  const getWritings = () => {
-    fetch('/writings.json', {
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
-    })
-      .then(response => response.json())
-      .then(myJson => setWritings(myJson));
-  }
 
-  const getProjects = async () => {
+  const fetchProjectsAndWritings = async () => {
     const authData = await pb.admins.authWithPassword(
       import.meta.env.VITE_PB_EMAIL,
       import.meta.env.VITE_PB_PASSWORD
     );
-    const records = await pb.collection('projects').getFullList({
+    const recordsProjects = await pb.collection('projects').getFullList({
       sort: '-created',
     });
-    setProjects(records);
+    const recordsWritings = await pb.collection('writings').getFullList({
+      sort: '-created',
+    });
+    
+    setProjects(recordsProjects);
+    setWritings(recordsWritings);
     pb.authStore.clear();
   }
 
   useEffect(() => {
-    getWritings();
-    getProjects();
+    fetchProjectsAndWritings();
   }, []);
 
   return (
