@@ -44,11 +44,11 @@ function Project({ id, collectionId, image = "https://placehold.co/600x400", tit
 }
 
 Project.propTypes = {
-  id: PropTypes.string.isRequired, // Ensure id is passed as a prop
+  id: PropTypes.string.isRequired,
   image: PropTypes.string,
   title: PropTypes.string,
-  icons: PropTypes.arrayOf(PropTypes.string), // Array of icon file paths
-  collectionId: PropTypes.string.isRequired // Ensure collectionId is passed as a prop
+  icons: PropTypes.arrayOf(PropTypes.string),
+  collectionId: PropTypes.string.isRequired
 };
 
 export default Project;

@@ -28,7 +28,7 @@ function Writings({ writings }) {
                 id={writing.id}
                 topic={writing.topic}
                 title={writing.title}
-                paragraph={writing.paragraph}
+                paragraph={writing.content}
                 createdDate={writing.createdDate}
                 readingTime={writing.readingTime}
               />
