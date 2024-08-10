@@ -49,8 +49,12 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="projects" element={<Projects projects={projects} />} />
             <Route path="projects/:id" element={<ProjectDetail projects={projects} />} />
+            {
+             /*
             <Route path="writings" element={<Writings writings={writings} />} />
             <Route path="writings/:id" element={<WritingDetail writings={writings} />} />
+             */ 
+            }
           </Route>
         </Routes>
       </BrowserRouter>
